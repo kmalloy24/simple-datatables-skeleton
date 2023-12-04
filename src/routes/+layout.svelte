@@ -35,6 +35,14 @@
 				</a>
 				<a
 					class="btn btn-sm variant-filled-tertiary"
+					href="https://tailwindcss.com/"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Tailwind
+				</a>
+				<a
+					class="btn btn-sm variant-ghost-surface"
 					href="https://github.com/kmalloy24/simple-datatables-skeleton"
 					target="_blank"
 					rel="noreferrer"
