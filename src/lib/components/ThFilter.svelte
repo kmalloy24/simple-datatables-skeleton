@@ -7,7 +7,7 @@
 
 <th>
 	<input
-		class="input variant-form-material h-8 text-sm w-64"
+		class="input variant-form-material h-8 text-sm w-24"
 		type="text"
 		placeholder="Filter"
 		bind:value

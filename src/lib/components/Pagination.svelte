@@ -6,7 +6,7 @@
 	const pages = handler.getPages({ ellipsis: true });
 </script>
 
-<section class="my-2 btn-group variant-ghost-surface [&>*+*]:border-surface-500">
+<section class="btn-group variant-ghost-surface [&>*+*]:border-surface-500 h-10 hidden lg:block">
 	<button
 		type="button"
 		class:disabled={$pageNumber === 1}
@@ -28,6 +28,25 @@
 		type="button"
 		class:disabled={$pageNumber === $pageCount}
 		on:click={() => handler.setPage('next')}
+	>
+		Next
+	</button>
+</section>
+
+<section class="lg:hidden">
+	<button
+		type="button"
+		class:disabled={$pageNumber === 1}
+		on:click={() => handler.setPage('previous')}
+		class="btn variant-ghost-surface mr-2 mb-2"
+	>
+		Previous
+	</button>
+	<button
+		type="button"
+		class:disabled={$pageNumber === $pageCount}
+		on:click={() => handler.setPage('next')}
+		class="btn variant-ghost-surface mb-2"
 	>
 		Next
 	</button>

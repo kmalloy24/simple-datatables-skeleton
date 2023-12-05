@@ -18,13 +18,13 @@
 	const rows = handler.getRows();
 </script>
 
-<header class="flex justify-between mt-4 mx-[10%]">
-	<Search {handler} />
-	<RowsPerPage {handler} />
-</header>
+<div class="mx-[10%] my-4 overflow-x-auto space-y-2">
+	<header class="flex justify-between">
+		<Search {handler} />
+		<RowsPerPage {handler} />
+	</header>
 
-<div class=" flex justify-center items-center mx-[10%]">
-	<table class="table table-hover table-compact table-auto mt-4">
+	<table class="table table-hover table-compact w-full table-auto">
 		<thead>
 			<tr>
 				<Th {handler} orderBy="first_name">First name</Th>
@@ -47,9 +47,9 @@
 			{/each}
 		</tbody>
 	</table>
-</div>
 
-<footer class="flex justify-between mx-[10%]">
-	<RowCount {handler} />
-	<Pagination {handler} />
-</footer>
+	<footer class="flex justify-between">
+		<RowCount {handler} />
+		<Pagination {handler} />
+	</footer>
+</div>
