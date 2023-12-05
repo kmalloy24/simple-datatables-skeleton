@@ -7,12 +7,11 @@
 
 <aside class="flex place-items-center">
 	Show
-	<select class="select" bind:value={$rowsPerPage}>
+	<select class="select ml-2" bind:value={$rowsPerPage}>
 		{#each options as option}
 			<option value={option}>
 				{option}
 			</option>
 		{/each}
 	</select>
-	entries
 </aside>

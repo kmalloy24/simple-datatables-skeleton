@@ -4,7 +4,7 @@
 	const rowCount = handler.getRowCount();
 </script>
 
-<aside class="text-primary-500 text-sm leading-8 mr-6">
+<aside class="text-sm leading-8 mr-6">
 	{#if $rowCount.total > 0}
 		Showing <b>{$rowCount.start}</b>
 		to <b>{$rowCount.end}</b>

@@ -5,7 +5,7 @@
 </script>
 
 <input
-	class="input w-48"
+	class="input sm:w-64 w-36"
 	type="search"
 	placeholder="Search..."
 	bind:value
