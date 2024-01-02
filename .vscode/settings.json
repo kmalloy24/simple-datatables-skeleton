@@ -1,7 +1,5 @@
 {
-	"prettier.documentSelectors": [
-		"**/*.svelte"
-	],
+	"prettier.documentSelectors": ["**/*.svelte"],
 	"tailwindCSS.classAttributes": [
 		"class",
 		"accent",
@@ -114,5 +112,6 @@
 		"transition",
 		"width",
 		"zIndex"
-	]
+	],
+	"cSpell.words": ["Datatable", "datatables", "vincjo"]
 }

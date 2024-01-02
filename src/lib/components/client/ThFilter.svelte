@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { DataHandler, Field } from '@vincjo/datatables';
+	import type { DataHandler } from '@vincjo/datatables';
 	export let handler: DataHandler;
-	export let filterBy = null;
+	export let filterBy: any = null;
 	let value = '';
 </script>
 
