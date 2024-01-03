@@ -1,7 +1,7 @@
 import type { State } from '@vincjo/datatables/remote';
 
 export const reload = async (state: State) => {
-	const response = await fetch(`https://jsonplaceholder.typicode.com/comments?${getParams(state)}`);
+	const response = await fetch(`https://jsonplaceholder.typicode.com/todos?${getParams(state)}`);
 	return response.json();
 };
 
@@ -16,9 +16,11 @@ const getParams = (state: State) => {
 	if (sort) {
 		params += `&_sort=${sort.orderBy}&_order=${sort.direction}`;
 	}
+
 	if (filters) {
 		params += filters.map(({ filterBy, value }) => `&${filterBy}=${value}`).join();
 	}
+	// console.log(params);
 	if (search) {
 		params += `&q=${search}`;
 	}

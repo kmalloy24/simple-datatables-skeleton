@@ -1,61 +1,23 @@
 <script lang="ts">
-	import type { DataHandler, Field } from '@vincjo/datatables';
-	export let handler: DataHandler;
-	export let orderBy = null;
+	import type { DataHandler } from '@vincjo/datatables';
 
-	const identifier = orderBy?.toString();
+	export let handler: DataHandler;
+	export let orderBy: string;
+
 	const sorted = handler.getSort();
 </script>
 
-<th on:click={() => handler.sort(orderBy)} class:active={$sorted.identifier === identifier}>
-	<div class="flex">
-		<strong>
-			<slot />
-		</strong>
-		<span class:asc={$sorted.direction === 'asc'} class:desc={$sorted.direction === 'desc'} />
+<th on:click={() => handler.sort(orderBy)} class="cursor-pointer select-none">
+	<div class="flex h-full items-center justify-start gap-x-2">
+		<slot />
+		{#if $sorted.identifier === orderBy}
+			{#if $sorted.direction === 'asc'}
+				🡡
+			{:else if $sorted.direction === 'desc'}
+				🡣
+			{/if}
+		{:else}
+			↕️
+		{/if}
 	</div>
 </th>
-
-<style>
-	th {
-		background: inherit;
-		margin: 0;
-		padding: 8px 20px;
-		user-select: none;
-	}
-	th {
-		cursor: pointer;
-	}
-	th div.flex {
-		padding: 0;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		height: 100%;
-	}
-	th span {
-		padding-left: 8px;
-	}
-	th span:before,
-	th span:after {
-		border: 4px solid transparent;
-		content: '';
-		display: block;
-		height: 0;
-		width: 0;
-	}
-	th span:before {
-		border-bottom-color: #e0e0e0;
-		margin-top: 2px;
-	}
-	th span:after {
-		border-top-color: #e0e0e0;
-		margin-top: 2px;
-	}
-	th.active span.asc:before {
-		border-bottom-color: #9e9e9e;
-	}
-	th.active span.desc:after {
-		border-top-color: #9e9e9e;
-	}
-</style>

@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { DataHandler } from '@vincjo/datatables/remote';
 	export let handler: DataHandler;
-	export let filterBy: any = null;
+	export let filterBy: string;
 
-	let value: string = '';
+	let value: string;
 	let timeout: any;
 
 	const filter = () => {

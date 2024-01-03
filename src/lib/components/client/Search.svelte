@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { DataHandler } from '@vincjo/datatables';
 	export let handler: DataHandler;
-	let value = '';
+	let value: string;
 </script>
 
 <input

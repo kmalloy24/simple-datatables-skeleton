@@ -1,7 +1,4 @@
 <script>
-	//Import data
-	import data from '$lib/components/client/data';
-
 	//Import local datatable components
 	import ThSort from '$lib/components/client/ThSort.svelte';
 	import ThFilter from '$lib/components/client/ThFilter.svelte';
@@ -10,10 +7,13 @@
 	import RowCount from '$lib/components/client/RowCount.svelte';
 	import Pagination from '$lib/components/client/Pagination.svelte';
 
-	//Import datatable handler from Svelte Simple Datatables
+	//Load local data
+	import data from '$lib/components/client/data';
+
+	//Import handler from SSD
 	import { DataHandler } from '@vincjo/datatables';
 
-	//Datatable handler initialization
+	//Init data handler - CLIENT
 	const handler = new DataHandler(data, { rowsPerPage: 5 });
 	const rows = handler.getRows();
 </script>
