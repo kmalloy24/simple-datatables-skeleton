@@ -44,7 +44,7 @@ devDependencies:
     specifier: ^6.0.0
     version: 6.0.0(eslint@8.28.0)(typescript@5.0.2)
   '@vincjo/datatables':
-    specifier: ^1.14.0
+    specifier: github:vincjo/datatables
     version: 1.14.0(svelte@4.2.7)
   autoprefixer:
     specifier: 10.4.16
