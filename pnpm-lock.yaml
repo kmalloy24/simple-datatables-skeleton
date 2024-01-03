@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^6.0.0
     version: 6.0.0(eslint@8.28.0)(typescript@5.0.2)
   '@vincjo/datatables':
-    specifier: github:vincjo/datatables
-    version: 1.14.0(svelte@4.2.7)
+    specifier: ^1.14.2
+    version: 1.14.2(svelte@4.2.7)
   autoprefixer:
     specifier: 10.4.16
     version: 10.4.16(postcss@8.4.31)
@@ -734,8 +734,8 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@vincjo/datatables@1.14.0(svelte@4.2.7):
-    resolution: {integrity: sha512-reulPYNblEy/eKVx6zmZQ6ZnV48fg0QIIibcGJPw83q7P9mVD5LtEo7JuB21/Dhge9y3lmKEb4gCPgz/B5TTGA==}
+  /@vincjo/datatables@1.14.2(svelte@4.2.7):
+    resolution: {integrity: sha512-g+wKmU/npUkovkZSIxO+Dd8odpbse2VEFwGVbXvik2wYb8g8Wz+bIIRj6eeeXYM43N4tm/lOAj8eTUHRALRUNg==}
     peerDependencies:
       svelte: '>=3.54.0'
     dependencies:
