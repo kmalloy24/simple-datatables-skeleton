@@ -30,6 +30,22 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
+	<!-- Banner -->
+	<div class="variant-filled-primary p-4">
+		<div class="mx-auto w-full max-w-7xl text-center">
+			<p>
+				This project has been <strong>depreciated.</strong> Please refer to the official integration
+				guide in the
+				<a
+					class="text-tertiary-500 underline"
+					href="https://www.skeleton.dev/docs/ssd"
+					target="_blank"
+				>
+					Skeleton Docs.</a
+				>
+			</p>
+		</div>
+	</div>
 	<div class="mx-[10%] my-8">
 		<!-- Page Route Content -->
 		<slot />

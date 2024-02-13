@@ -1,16 +1,5 @@
 <script lang="ts">
-	//for alert
-	let visible: boolean = true;
 </script>
-
-<!-- Alert -->
-{#if visible}
-	<aside class="alert bg-gradient-to-br variant-gradient-primary-secondary">
-		<div class="alert-message">
-			<p class="text-xl font-bold font-mono text-center">🏗️ This is a work in progress 👨‍💻</p>
-		</div>
-	</aside>
-{/if}
 
 <h1 class="text-center h2 p-2 my-8">
 	<a class="anchor" href="https://vincjo.fr/datatables/home" target="_blank"
